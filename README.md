@@ -17,7 +17,7 @@ MVP: streamlit interface that shows the tree of categories; at a leaf of the tre
 
 We broke the task in two main steps.
 1. clusturing engine
-   - quick research of libraries for clusturing, specialised in NLP
+   - quick research of libraries for clustering, specialised in NLP
    - explore the data:
      * how do we represent the data? Vectorization?
      * cleaning
@@ -29,7 +29,7 @@ We broke the task in two main steps.
    - the tree implementation
    - the leafs implementation (the path to the leaf, list of emails, and how to read them)
 
-Our first goal is to have a _functionning_ clusturing engine by **wednesday 13/04**.
+Our first goal is to have a _functionning_ clusturing engine by **Wednesday 13/04**.
 
 
 1. Monday 11/04
