@@ -1,4 +1,4 @@
-# Enron emails clusturing
+# Enron emails clustering
 
 # Description
 
