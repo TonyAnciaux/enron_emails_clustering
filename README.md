@@ -36,13 +36,13 @@ Our first goal is to have a _functionning_ clusturing engine by **Wednesday 13/0
 
 - Todo list:
 
-  [X] create repo
-  [X] update the readme
-  [ ] read as much on the available tools
-  [ ] decide which tools to use.
-  [ ] look a little in the dataset to see how messy it is
-  [ ] Quick catch-up meeting after techtalk.
-  [ ] Implement usage of Trello
+  - [x] create repo  
+  - [x] update the readme  
+  - [ ] read as much on the available tools  
+  - [ ] decide which tools to use.  
+  - [ ] look a little in the dataset to see how messy it is  
+  - [ ] Quick catch-up meeting after techtalk.  
+  - [ ] Implement usage of Trello  
 
 - Who does what:
   1. Q: create repo and readme
