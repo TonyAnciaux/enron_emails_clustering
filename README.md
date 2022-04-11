@@ -8,7 +8,7 @@ This project aims at clustering the emails related to the [ENRON scandal](https:
 
 - [Tony Anciaux](https://github.com/TonyAnciaux)
 - [Biniam Behre](https://github.com/BiniamBerhe)
-- [Giovana Fauro](https://github.com/Gio-F)
+- [Giovanna Fauro](https://github.com/Gio-F)
 - [Quentin Lambotte](https://github.com/qlambotte)
 
 # Roadmap
