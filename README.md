@@ -50,3 +50,7 @@ Our first goal is to have a _functionning_ clusturing engine by **wednesday 13/0
   4. T: automated labelling
   5. G: how to encode the text parts of the data.
   6. G: implement usage of Trello
+
+# Bonus features
+
+1. deploy using docker and host the webapp online
