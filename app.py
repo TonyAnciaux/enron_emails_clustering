@@ -73,22 +73,27 @@ def main():
     side = st.sidebar
     fst_ = side.selectbox("View",["Global View", "Topic View"])
     if fst_ == "Global View":
-         st.title("Triage of ENRON emails")
-         st.text("Some small presentation of the app")
+         st.title("Email analysis tool")
+         st.subheader("Menu View")
+         st.write("Allows you to visualize the most relevant words within each topic or in a global way.")
+         st.write("Usage: Select the option from the drop down menu.")
+         st.subheader("Menu Topics")
+         st.write("This opens the main page where you can access each email pertaining to the selected topic.")
+         st.write("Usage: Select the topic you wish to explore from the drop down menu.")
          flat_topics = [value for topic in model.topics_union for value in topic]
          st.plotly_chart(display_cloud(dict(flat_topics)))
     else:
         def format_func(topic):
             idx, top = topic
             return 'Topic: {} \nWords: {}'.format(idx, ', '.join([w[0] for w in top]))
-        topic = side.selectbox("topics",model.topics, format_func=format_func)
+        topic = side.selectbox("Topics",model.topics, format_func=format_func)
         if topic:
             st.title(f"This is topic no {topic[0]}")
             idx, top = topic
             st.plotly_chart(display_cloud(dict(top)))
-            series_of_emails = model.mails_of_topic(idx)
-            email = st.selectbox("emails",series_of_emails)
+            series_of_emails = model.mails_of_topic(idx, thresh=0.99)
+            email = st.selectbox("Emails",series_of_emails)
             message = model.email_of_path(email)
-            st.text(message)
+            st.write(message)
 if __name__ == '__main__':
     main()
