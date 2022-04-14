@@ -86,5 +86,9 @@ def main():
             st.title(f"This is topic no {topic[0]}")
             idx, top = topic
             st.plotly_chart(display_cloud(dict(top)))
+            series_of_emails = model.mails_of_topic(idx)
+            email = st.selectbox("emails",series_of_emails)
+            message = model.email_of_path(email)
+            st.text(message)
 if __name__ == '__main__':
     main()
